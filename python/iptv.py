@@ -23,14 +23,17 @@ class Iptv (object):
 
         self.DB.chkTable()
 
-        Base = base.Source()
-        Base.getSource()
+        # Base = base.Source()
+        # Base.getSource()
 
-        Dotpy = dotpy.Source()
-        Dotpy.getSource()
+        # Dotpy = dotpy.Source()
+        # Dotpy.getSource()
 
-        listB = listb.Source()
-        listB.getSource()
+        # listB = listb.Source()
+        # listB.getSource()
+
+        GitHub = github.Source()
+        GitHub.getSource()
 
         self.outPut()
         self.outJson()
