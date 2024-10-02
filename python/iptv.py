@@ -7,10 +7,10 @@ import time
 import re
 import json
 import os
-from plugins import base
+# from plugins import base
 # from plugins import lista
-from plugins import listb
-from plugins import dotpy
+# from plugins import listb
+# from plugins import dotpy
 
 class Iptv (object):
 
