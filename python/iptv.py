@@ -11,6 +11,7 @@ import os
 # from plugins import lista
 # from plugins import listb
 # from plugins import dotpy
+from plugins import github
 
 class Iptv (object):
 
