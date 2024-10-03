@@ -8,10 +8,8 @@ on:
 jobs:
   run-python-script:
     runs-on: ubuntu-20.04
-    defaults:
-      run:
-        shell: bash
-        working-directory: .
+    permissions:
+      actions: read|write|none
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v3
