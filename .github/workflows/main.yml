@@ -8,8 +8,6 @@ on:
 jobs:
   run-python-script:
     runs-on: ubuntu-20.04
-    permissions:
-      actions: read|write|none
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
