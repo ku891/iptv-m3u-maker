@@ -31,6 +31,7 @@ class Source (object) :
             i = 1
             total = len(sourceList)
             for item in sourceList :
+                print(item)
                 info = self.T.fmtTitle(item[0])
                 self.T.logger('正在分析[ %s / %s ]: %s' % (i, total, str(info['id']) + str(info['title'])))
 
