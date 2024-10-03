@@ -13,9 +13,10 @@ class Source (object) :
 
     def getSource (self) :
         urlList = []
+        url = 'https://raw.githubusercontent.com/joevess/IPTV/refs/heads/main/m3u/iptv.m3u'
         # url = 'https://raw.githubusercontent.com/billy21/Tvlist-awesome-m3u-m3u8/master/m3u/%E5%9B%BD%E5%86%85.m3u'
         # url = 'https://raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/m3u/itv.m3u'
-        url = 'https://raw.githubusercontent.com/jisoypub/iptv/refs/heads/master/cn_all.m3u'
+        # url = 'https://raw.githubusercontent.com/jisoypub/iptv/refs/heads/master/cn_all.m3u'
         req = [
             'user-agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Mobile Safari/537.36',
         ]
