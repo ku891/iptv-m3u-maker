@@ -1,3 +1,5 @@
+# IPTV m3u 改为github自动执行 生成文件供IPTV程序调用
+
 # IPTV m3u 直播源 收集 & 汇总
 
  [项目详细说明](https://evilcult.dev/07/19/2019/IPTV-Projects/)
