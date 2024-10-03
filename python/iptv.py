@@ -52,7 +52,7 @@ class Iptv (object):
             """ % (self.DB.table)
         result = self.DB.query(sql)
 
-        with open(os.path.join(os.path.dirname(os.path.abspath(__file__)).replace('python', 'http'), 'tv.m3u'), 'w') as f:
+        with open(os.path.join(os.path.dirname(os.path.abspath(__file__)).replace('python', 'http'), 'tv.m3u'), 'w', encoding="utf-8") as f:
             f.write("#EXTM3U\n")
             for item in result :
                 className = '其他频道'
@@ -106,7 +106,7 @@ class Iptv (object):
 
         jsonStr = json.dumps(fmtList)
 
-        with open( os.path.join(os.path.dirname(os.path.abspath(__file__)).replace('python', 'http'), 'tv.json'), 'w') as f:
+        with open( os.path.join(os.path.dirname(os.path.abspath(__file__)).replace('python', 'http'), 'tv.json'), 'w', encoding="utf-8") as f:
             f.write(jsonStr)
 
 if __name__ == '__main__':
