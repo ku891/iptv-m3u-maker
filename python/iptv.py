@@ -34,12 +34,26 @@ class Iptv (object):
         # listB.getSource()
 
         GitHub = github.Source()
-        GitHub.getSource()
-
+        urlList = GitHub.getSource()
+        for item in urlList:
+            self.addData(item)
+            
         self.outPut()
         self.outJson()
 
         self.T.logger("抓取完成")
+
+    def addData(self, data):
+        sql = "SELECT * FROM %s WHERE url = '%s'" % (
+            self.DB.table, data['url'])
+        result = self.DB.query(sql)
+
+        if len(result) == 0:
+            data['enable'] = 1
+            self.DB.insert(data)
+        else:
+            id = result[0][0]
+            self.DB.edit(id, data)
 
     def outPut (self) :
         self.T.logger("正在生成m3u8文件")
